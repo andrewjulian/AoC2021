@@ -42,14 +42,10 @@ for i in range(0,len(otherValuesArray)-1):
 otherValuesArray = otherValuesArray[:-1]
 
 #removes last item which was just an empyt set
-#print(otherValuesArray)
+print(otherValuesArray)
 
 #creates bingo cards from array items in sets of 5
 
-
-grid1 = otherValuesArray[0:4:1]
-
-print(grid1)
 
 # evaluate each table for values in randomArray using [][] and nested for loops
     # change value to 0 if found, otherwise leave value as is
