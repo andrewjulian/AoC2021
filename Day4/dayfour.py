@@ -30,11 +30,26 @@ def divide_chunks(l, n):
         yield l[i:i + n]
 
 otherValuesArray = list(divide_chunks(otherValues, 6))
-print(otherValuesArray)
+#print(otherValuesArray)
 
 # create separate 2D arrays for each grid ---------------------------------------------------
+import numpy as np
+
+#removes space at beginning of bingo card
+for i in range(0,len(otherValuesArray)-1):
+    otherValuesArray[i].pop(0)
+
+otherValuesArray = otherValuesArray[:-1]
+
+#removes last item which was just an empyt set
+#print(otherValuesArray)
+
+#creates bingo cards from array items in sets of 5
 
 
+grid1 = otherValuesArray[0:4:1]
+
+print(grid1)
 
 # evaluate each table for values in randomArray using [][] and nested for loops
     # change value to 0 if found, otherwise leave value as is
