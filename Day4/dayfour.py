@@ -20,40 +20,12 @@ for item in otherValues:
     if item == "":
         otherValues.remove(item)
 
-""" otherValuesNP = np.array(otherValues)
-otherValuesNP[0:6]
-print(otherValuesNP) """
-
+# create separate 2D arrays for each grid ---------------------------------------------------
 for i in range(1,len(otherValues)-1,5):
     print(otherValues[i:i+5])
 
-""" 
+# evaluate each table for values in randomArray using [][][]and nested for loops
 
-def divide_chunks(l, n):
-      
-    # looping till length l
-    for i in range(0, len(l), n): 
-        yield l[i:i + n]
-
-otherValuesArray = list(divide_chunks(otherValues, 6))
-print(otherValuesArray)
-
-# create separate 2D arrays for each grid ---------------------------------------------------
-
-
-
-#removes space at beginning of bingo card
-for i in range(0,len(otherValuesArray)-1):
-    otherValuesArray[i].pop(0)
-
-otherValuesArray = otherValuesArray[:-1]
-
-#removes last item which was just an empyt set
-#print(otherValuesArray)
-
-#creates bingo cards from array items in sets of 5
-
-# evaluate each table for values in randomArray using [][] and nested for loops
     # change value to 0 if found, otherwise leave value as is
     # include test(s) to determine if a winning row or column is found
 
